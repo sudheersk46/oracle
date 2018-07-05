@@ -1,0 +1,12 @@
+ select username, default_tablespace from dba_users;
+select * from all_users; list users and creation date
+dba_tables
+dba_data_files
+v$datafile
+all_tables
+user_tables
+dba_users
+all_users
+ select file_name, tablespace_name,temporary_tablespace from dba_data_files
+ select username, default_tablespace from dba_users
+select name from v$datafile;
