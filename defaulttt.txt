@@ -10,3 +10,9 @@ all_users
  select file_name, tablespace_name,temporary_tablespace from dba_data_files
  select username, default_tablespace from dba_users
 select name from v$datafile;
+
+
+select * form v$resource_limit where resource_name='processes' 
+show parameter session
+show parameter process
+select * from v$session v$process
