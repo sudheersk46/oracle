@@ -6,10 +6,13 @@ desc v$process
 desc v$session
 
 select * from v$session
+select username from v$sessin where machine='lap001';
 slect * from dba__tables
 slect * from user_tables
 slect * from data_tables
-slect * from v4datsfiles
+slect * from v4datsfile
 slect * from v4database
 slect * from v$tablespace
+
+exec print_table('query');
 
