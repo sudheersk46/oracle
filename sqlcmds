@@ -1,0 +1,15 @@
+select * from v$version
+
+desc v$version
+select * from v$process
+desc v$process
+desc v$session
+
+select * from v$session
+slect * from dba__tables
+slect * from user_tables
+slect * from data_tables
+slect * from v4datsfiles
+slect * from v4database
+slect * from v$tablespace
+
