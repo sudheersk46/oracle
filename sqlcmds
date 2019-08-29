@@ -16,3 +16,11 @@ slect * from v$tablespace
 
 exec print_table('query');
 
+
+copy## schema or table copy
+expdp fromUser/fromPword schemas=sourceSchema directory=DUMPDIR dumpfile=dump.dmp logfile=explog.txt
+impdp toUser/toPword directory=DUMPDIR dumpfile=dump.dmp logfile=implog.txt remap_schema=fromUser:toUser
+
+#http://www.javaroots.com/2013/10/expdp-impdp-remote-oracle-db-example.html
+
+expdp userid=localdb/localdb@//localhost:1521/ORCL dumpfile=testdump.dmp logfile=testdump.log SCHEMAS=myschema directory=dumpdir 
