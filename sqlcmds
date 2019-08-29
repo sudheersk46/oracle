@@ -23,5 +23,5 @@ impdp toUser/toPword directory=DUMPDIR dumpfile=dump.dmp logfile=implog.txt rema
 
 #http://www.javaroots.com/2013/10/expdp-impdp-remote-oracle-db-example.html
 https://learnwithme11g.wordpress.com/2012/06/07/copy-schema-into-same-database-with-impdp/
-
+https://dba.stackexchange.com/questions/30516/how-to-transfer-data-using-expdp-and-impdp-commands
 expdp userid=localdb/localdb@//localhost:1521/ORCL dumpfile=testdump.dmp logfile=testdump.log SCHEMAS=myschema directory=dumpdir 
